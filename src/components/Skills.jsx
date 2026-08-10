@@ -53,7 +53,7 @@ export default function Skills() {
       className="relative z-10 mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28"
     >
       <div className="grid grid-cols-4 gap-x-6 md:grid-cols-12">
-        <SectionHeading numeral="02" title="Stack" tag="Fig. 03 — Tooling" />
+        <SectionHeading numeral="03" title="Stack" tag="Fig. 03 — Tooling" />
       </div>
 
       <div className="border-t border-rule mt-8">

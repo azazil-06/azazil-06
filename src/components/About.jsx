@@ -18,7 +18,7 @@ export default function About() {
       viewport={inView}
       className="relative z-10 mx-auto grid max-w-[1400px] grid-cols-4 gap-x-6 px-6 py-20 md:grid-cols-12 md:px-10 md:py-28"
     >
-      <SectionHeading numeral="01" title="About" tag="Fig. 02 — Profile" />
+      <SectionHeading numeral="02" title="About" tag="Fig. 02 — Profile" />
 
       <motion.p
         variants={fadeUp}

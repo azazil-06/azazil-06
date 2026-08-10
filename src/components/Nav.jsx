@@ -10,10 +10,11 @@ import { EASE } from "../lib/motion";
  * accent underline that draws in from the left.
  */
 const LINKS = [
-  { label: "About", href: "#about", num: "01" },
-  { label: "Stack", href: "#stack", num: "02" },
-  { label: "Work", href: "#work", num: "03" },
-  { label: "Contact", href: "#contact", num: "04" },
+  { label: "Stats", href: "#stats", num: "01" },
+  { label: "About", href: "#about", num: "02" },
+  { label: "Stack", href: "#stack", num: "03" },
+  { label: "Work", href: "#work", num: "04" },
+  { label: "Contact", href: "#contact", num: "05" },
 ];
 
 function useActiveSection() {

@@ -109,7 +109,7 @@ export default function Projects() {
         viewport={inView}
         className="grid grid-cols-4 gap-x-6 md:grid-cols-12"
       >
-        <SectionHeading numeral="03" title="Selected Work" tag="Fig. 04 — Index of Builds" />
+        <SectionHeading numeral="04" title="Selected Work" tag="Fig. 04 — Index of Builds" />
       </motion.div>
 
       {GROUPS.map((g) => (
