@@ -5,7 +5,7 @@ import Magnetic from "./Magnetic.jsx";
 import DarkModeToggle from "./DarkModeToggle.jsx";
 import LiveTime from "./LiveTime.jsx";
 import { EASE } from "../lib/motion";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet.tsx";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 /**
  * Fixed top navigation. Links are magnetic on hover and use an
