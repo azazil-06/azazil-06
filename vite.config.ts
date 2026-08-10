@@ -7,6 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [
     tanstackStart({
+      // @ts-expect-error - preset is passed to Nitro but not typed in this version
       server: { entry: "./src/server.ts", preset: "vercel" },
     }),
     viteReact(),

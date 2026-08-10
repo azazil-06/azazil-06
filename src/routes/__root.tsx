@@ -10,6 +10,7 @@ import {
 import { MotionConfig } from "framer-motion";
 import { useEffect, type ReactNode } from "react";
 
+// @ts-expect-error - CustomCursor is a JSX file without typings
 import CustomCursor from "../components/CustomCursor";
 import appCss from "../styles.css?url";
 
