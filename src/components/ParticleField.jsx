@@ -92,9 +92,35 @@ export default function ParticleField() {
     window.addEventListener("mousemove", onMouseMove);
     document.addEventListener("mouseleave", onMouseLeave);
 
+    // ── Comet variables ──
+    let comets = [];
+    let nextCometTime = performance.now() + 500 + Math.random() * 1000; // First comet very fast (0.5 - 1.5s)
+
+    const spawnComet = (now) => {
+      const isTop = Math.random() > 0.5;
+      const startX = isTop ? Math.random() * w : -50;
+      const startY = isTop ? -50 : Math.random() * (h / 2);
+      
+      const speed = 4 + Math.random() * 3; // a bit faster so they don't clog up
+      const angle = (Math.PI / 4) + (Math.random() - 0.5) * 0.2;
+      const length = 150 + Math.random() * 150;
+
+      comets.push({
+        x: startX,
+        y: startY,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        length,
+        color: Math.random() > 0.5 ? accent : "#5ac8fa",
+      });
+
+      // schedule next one very frequently: every 3 to 6 seconds
+      nextCometTime = now + 3000 + Math.random() * 3000;
+    };
+
     // ── Animation loop ──
     let time = 0;
-    const loop = () => {
+    const loop = (now) => {
       time += 0.01;
       ctx.clearRect(0, 0, w, h);
 
@@ -146,6 +172,48 @@ export default function ParticleField() {
         }
 
         ctx.restore();
+      }
+
+      // ── Comet Logic ──
+      if (now > nextCometTime) {
+        spawnComet(now);
+      }
+
+      for (let i = comets.length - 1; i >= 0; i--) {
+        const c = comets[i];
+        c.x += c.vx;
+        c.y += c.vy;
+
+        const speedMag = Math.sqrt(c.vx * c.vx + c.vy * c.vy);
+        const tx = c.x - (c.vx / speedMag) * c.length;
+        const ty = c.y - (c.vy / speedMag) * c.length;
+
+        ctx.save();
+        const gradient = ctx.createLinearGradient(c.x, c.y, tx, ty);
+        
+        // Comets fade out if their opacity drops (though we just rely on gradient)
+        gradient.addColorStop(0, c.color);
+        gradient.addColorStop(1, 'rgba(0,0,0,0)');
+        
+        ctx.strokeStyle = gradient;
+        ctx.lineWidth = 2.5;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(c.x, c.y);
+        ctx.lineTo(tx, ty);
+        ctx.stroke();
+
+        // Draw a bright head for the comet
+        ctx.fillStyle = "#ffffff";
+        ctx.beginPath();
+        ctx.arc(c.x, c.y, 1.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+
+        // Remove if off screen
+        if (c.x > w + c.length || c.y > h + c.length) {
+          comets.splice(i, 1);
+        }
       }
 
       ctx.globalAlpha = 1;
