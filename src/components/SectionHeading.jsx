@@ -16,7 +16,10 @@ export default function SectionHeading({ numeral, title, tag }) {
         </span>
       </div>
       <div className="col-span-3 md:col-span-7">
-        <h2 className="font-display text-2xl uppercase tracking-tight md:text-4xl">{title}</h2>
+        <h2 className="font-display text-2xl uppercase tracking-tight md:text-4xl">
+          <span className="text-accent">{title.charAt(0)}</span>
+          {title.slice(1)}
+        </h2>
       </div>
       {tag ? (
         <div className="col-span-4 md:col-span-3 md:text-right">

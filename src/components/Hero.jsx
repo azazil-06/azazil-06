@@ -29,12 +29,11 @@ export default function Hero() {
         </span>
       </motion.div>
 
-      <h1 className="font-display text-[22vw] font-semibold uppercase leading-[0.82] tracking-[-0.04em] md:text-[17vw]">
-        <ScrambleText
-          text="ARJUN"
-          scrambleDuration={800}
-          staggerMs={150}
-        />
+      <h1 className="flex font-display text-[22vw] font-semibold uppercase leading-[0.82] tracking-[-0.04em] md:text-[17vw]">
+        <span className="text-accent">
+          <ScrambleText text="A" scrambleDuration={800} staggerMs={150} />
+        </span>
+        <ScrambleText text="RJUN" scrambleDuration={950} staggerMs={150} />
       </h1>
 
       <div className="mt-8 grid grid-cols-4 gap-6 border-t border-rule pt-5 md:grid-cols-12">

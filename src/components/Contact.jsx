@@ -43,7 +43,7 @@ export default function Contact() {
       <h2 className="font-display text-[13vw] font-semibold uppercase leading-[0.85] tracking-[-0.04em] md:text-[11vw]">
         {LINES.map((line) => (
           <span key={line} className="block overflow-hidden">
-            <motion.span variants={lineReveal} className="block">
+            <motion.span variants={lineReveal} className={`block ${line === "SOMETHING" ? "text-accent" : ""}`}>
               {line}
             </motion.span>
           </span>
