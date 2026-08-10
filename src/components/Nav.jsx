@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Magnetic from "./Magnetic.jsx";
 import DarkModeToggle from "./DarkModeToggle.jsx";
+import LiveTime from "./LiveTime.jsx";
 import { EASE } from "../lib/motion";
 
 /**
@@ -56,9 +57,12 @@ export default function Nav() {
       className="fixed inset-x-0 top-0 z-50 border-b border-rule bg-background/85 backdrop-blur-sm"
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3 md:px-10">
-        <a href="#top" className="font-display text-sm lowercase tracking-[0.3em]">
-          Arjun<span className="text-accent">.dev</span>
-        </a>
+        <div className="flex items-center gap-6">
+          <a href="#top" className="font-display text-sm lowercase tracking-[0.3em]">
+            Arjun<span className="text-accent">.dev</span>
+          </a>
+          <LiveTime />
+        </div>
         <ul className="flex items-center gap-4 md:gap-8">
           {LINKS.map((l) => {
             const isActive = activeHref === l.href;
