@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Menu } from "lucide-react";
 import Magnetic from "./Magnetic.jsx";
 import DarkModeToggle from "./DarkModeToggle.jsx";
 import LiveTime from "./LiveTime.jsx";
 import { EASE } from "../lib/motion";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 /**
  * Fixed top navigation. Links are magnetic on hover and use an
@@ -51,7 +49,6 @@ function useActiveSection() {
 
 export default function Nav() {
   const activeHref = useActiveSection();
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <motion.nav
@@ -63,14 +60,12 @@ export default function Nav() {
        <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3 md:px-10">
         <div className="flex items-center gap-6">
           <a href="#top" className="flex items-center gap-2 font-display text-sm lowercase tracking-[0.3em]">
-            <img src="/favicon.ico" alt="Logo" className="w-5 h-5 animate-pulse" />
+            <img src="/favicon.ico" alt="Logo" className="w-5 h-5" />
             <span>Arjun<span className="text-accent">.dev</span></span>
           </a>
           <LiveTime />
         </div>
-        
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="flex items-center gap-4 md:gap-8">
           {LINKS.map((l) => {
             const isActive = activeHref === l.href;
             return (
@@ -95,41 +90,6 @@ export default function Nav() {
             <DarkModeToggle />
           </li>
         </ul>
-
-        {/* Mobile Navigation */}
-        <div className="flex items-center gap-4 md:hidden">
-          <DarkModeToggle />
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <button className="p-2 -mr-2 text-foreground/80 hover:text-foreground transition-colors cursor-pointer" aria-label="Menu">
-                <Menu className="w-5 h-5" />
-              </button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:w-80 border-rule">
-              <div className="flex flex-col gap-8 mt-12">
-                <a href="#top" className="flex items-center gap-2 font-display text-sm lowercase tracking-[0.3em]" onClick={() => setIsOpen(false)}>
-                  <img src="/favicon.ico" alt="Logo" className="w-5 h-5 animate-pulse" />
-                  <span>Arjun<span className="text-accent">.dev</span></span>
-                </a>
-                <ul className="flex flex-col gap-6">
-                  {LINKS.map((l) => {
-                    const isActive = activeHref === l.href;
-                    return (
-                      <li key={l.href}>
-                        <a href={l.href} onClick={() => setIsOpen(false)} className="group flex items-baseline gap-4">
-                          <span className={`font-mono text-[12px] ${isActive ? "text-accent" : "text-accent"}`}>{l.num}</span>
-                          <span className={`font-mono text-lg uppercase tracking-[0.15em] ${isActive ? "text-accent" : ""}`}>
-                            {l.label}
-                          </span>
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
       </div>
     </motion.nav>
   );

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Magnetic from "./Magnetic.jsx";
 import { fadeUp, inView, lineReveal, staggerParent } from "../lib/motion";
-import ScrambleText from "./ScrambleText.jsx";
 
 /**
  * Contact / footer: large closing typographic statement, magnetic links,
@@ -45,7 +44,7 @@ export default function Contact() {
         {LINES.map((line) => (
           <span key={line} className="block overflow-hidden">
             <motion.span variants={lineReveal} className={`block ${line === "SOMETHING" ? "text-accent" : ""}`}>
-              <ScrambleText text={line} />
+              {line}
             </motion.span>
           </span>
         ))}
