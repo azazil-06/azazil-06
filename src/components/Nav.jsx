@@ -1,0 +1,90 @@
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import Magnetic from "./Magnetic.jsx";
+import DarkModeToggle from "./DarkModeToggle.jsx";
+import { EASE } from "../lib/motion";
+
+/**
+ * Fixed top navigation. Links are magnetic on hover and use an
+ * accent underline that draws in from the left.
+ */
+const LINKS = [
+  { label: "About", href: "#about", num: "01" },
+  { label: "Stack", href: "#stack", num: "02" },
+  { label: "Work", href: "#work", num: "03" },
+  { label: "Contact", href: "#contact", num: "04" },
+];
+
+function useActiveSection() {
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    const ids = LINKS.map((l) => l.href.slice(1));
+    const observers = [];
+
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActive(`#${id}`);
+          }
+        },
+        { rootMargin: "-40% 0px -55% 0px" },
+      );
+
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
+
+  return active;
+}
+
+export default function Nav() {
+  const activeHref = useActiveSection();
+
+  return (
+    <motion.nav
+      initial={{ opacity: 0, y: -8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, ease: EASE, delay: 0.2 }}
+      className="fixed inset-x-0 top-0 z-50 border-b border-rule bg-background/85 backdrop-blur-sm"
+    >
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3 md:px-10">
+        <a href="#top" className="font-display text-sm lowercase tracking-[0.3em]">
+          Arjun<span className="text-accent">.dev</span>
+        </a>
+        <ul className="flex items-center gap-4 md:gap-8">
+          {LINKS.map((l) => {
+            const isActive = activeHref === l.href;
+            return (
+              <li key={l.href}>
+                <Magnetic strength={0.3}>
+                  <a href={l.href} className="group flex items-baseline gap-1.5">
+                    <span className={`hidden font-mono text-[10px] md:inline ${isActive ? "text-accent" : "text-accent"}`}>{l.num}</span>
+                    <span className={`relative font-mono text-[11px] uppercase tracking-[0.18em] ${isActive ? "text-accent" : ""}`}>
+                      {l.label}
+                      <span
+                        className={`absolute -bottom-1 left-0 h-px w-full origin-left bg-accent transition-transform duration-300 ease-out ${
+                          isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                        }`}
+                      />
+                    </span>
+                  </a>
+                </Magnetic>
+              </li>
+            );
+          })}
+          <li>
+            <DarkModeToggle />
+          </li>
+        </ul>
+      </div>
+    </motion.nav>
+  );
+}

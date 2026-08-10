@@ -1,0 +1,204 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design system definition.
+ *
+ * The @theme inline block maps CSS custom properties to Tailwind utility
+ * classes (e.g. --color-primary -> bg-primary, text-primary).
+ *
+ * The :root and .dark blocks define the actual color values using oklch.
+ * All colors MUST use oklch format.
+ *
+ * To add a new semantic color:
+ * 1. Add the variable to :root (light value) and .dark (dark value)
+ * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Swiss / International Typographic Style: paper, ink, one red. */
+  --radius: 0rem;
+  --background: oklch(0.963 0.008 85);
+  --foreground: oklch(0.17 0 0);
+  --card: oklch(0.963 0.008 85);
+  --card-foreground: oklch(0.17 0 0);
+  --popover: oklch(0.963 0.008 85);
+  --popover-foreground: oklch(0.17 0 0);
+  --primary: oklch(0.17 0 0);
+  --primary-foreground: oklch(0.963 0.008 85);
+  --secondary: oklch(0.93 0.008 85);
+  --secondary-foreground: oklch(0.17 0 0);
+  --muted: oklch(0.93 0.008 85);
+  --muted-foreground: oklch(0.44 0.005 85);
+  --accent: oklch(0.556 0.221 32.5);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.556 0.221 32.5);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.17 0 0 / 12%);
+  --input: oklch(0.17 0 0 / 22%);
+  --ring: oklch(0.556 0.221 32.5);
+
+  /* Custom Swiss tokens */
+  --ink: oklch(0.17 0 0);
+  --rule: oklch(0.17 0 0 / 14%);
+  --ink-wash: oklch(0.17 0 0 / 5%);
+
+  --sidebar: oklch(0.963 0.008 85);
+  --sidebar-foreground: oklch(0.17 0 0);
+  --sidebar-primary: oklch(0.17 0 0);
+  --sidebar-primary-foreground: oklch(0.963 0.008 85);
+  --sidebar-accent: oklch(0.93 0.008 85);
+  --sidebar-accent-foreground: oklch(0.17 0 0);
+  --sidebar-border: oklch(0.17 0 0 / 14%);
+  --sidebar-ring: oklch(0.556 0.221 32.5);
+}
+
+.dark {
+  --background: oklch(0.17 0 0);
+  --foreground: oklch(0.963 0.008 85);
+  --card: oklch(0.17 0 0);
+  --card-foreground: oklch(0.963 0.008 85);
+  --popover: oklch(0.17 0 0);
+  --popover-foreground: oklch(0.963 0.008 85);
+  --primary: oklch(0.963 0.008 85);
+  --primary-foreground: oklch(0.17 0 0);
+  --secondary: oklch(0.27 0 0);
+  --secondary-foreground: oklch(0.963 0.008 85);
+  --muted: oklch(0.27 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.556 0.221 32.5);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.556 0.221 32.5);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.963 0.008 85 / 12%);
+  --input: oklch(0.963 0.008 85 / 22%);
+  --ring: oklch(0.556 0.221 32.5);
+
+  /* Custom Swiss tokens */
+  --ink: oklch(0.963 0.008 85);
+  --rule: oklch(0.963 0.008 85 / 14%);
+  --ink-wash: oklch(0.963 0.008 85 / 5%);
+
+  --sidebar: oklch(0.17 0 0);
+  --sidebar-foreground: oklch(0.963 0.008 85);
+  --sidebar-primary: oklch(0.963 0.008 85);
+  --sidebar-primary-foreground: oklch(0.17 0 0);
+  --sidebar-accent: oklch(0.27 0 0);
+  --sidebar-accent-foreground: oklch(0.963 0.008 85);
+  --sidebar-border: oklch(0.963 0.008 85 / 14%);
+  --sidebar-ring: oklch(0.556 0.221 32.5);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-rule: var(--rule);
+  --color-ink-wash: var(--ink-wash);
+  --font-display: "Space Grotesk", "Archivo", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "Space Grotesk", ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--rule);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+}
+
+/* Infinite ticker strip — plain CSS keyframes, pauses on hover. */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Reduced motion: no transforms anywhere, static ticker. */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
