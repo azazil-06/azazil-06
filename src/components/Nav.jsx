@@ -56,10 +56,11 @@ export default function Nav() {
       transition={{ duration: 0.4, ease: EASE, delay: 0.2 }}
       className="fixed inset-x-0 top-0 z-50 border-b border-rule bg-background/85 backdrop-blur-sm"
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3 md:px-10">
+       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3 md:px-10">
         <div className="flex items-center gap-6">
-          <a href="#top" className="font-display text-sm lowercase tracking-[0.3em]">
-            Arjun<span className="text-accent">.dev</span>
+          <a href="#top" className="flex items-center gap-2 font-display text-sm lowercase tracking-[0.3em]">
+            <img src="/favicon.ico" alt="Logo" className="w-5 h-5" />
+            <span>Arjun<span className="text-accent">.dev</span></span>
           </a>
           <LiveTime />
         </div>
