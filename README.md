@@ -3,6 +3,7 @@
 # 👋 Hi there! I'm Arjun Prasad
 ### Developer & Maker • Robotics • Game Dev • Creative AI Tooling • Full-Stack Systems
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://arjun-snowy.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-azazil--06-181717?style=for-the-badge&logo=github)](https://github.com/azazil-06)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Arjun%20Prasad-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/arjun-prasad-9139a1327/)
 [![Email](https://img.shields.io/badge/Email-arjunprasadsa@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arjunprasadsa@gmail.com)
@@ -82,23 +83,9 @@ I love working with **constrained systems** — whether that means squeezing rea
 
 ---
 
-### 📊 GitHub Activity & Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=azazil-06&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Arjun's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=azazil-06&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=azazil-06&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
-
----
-
 ### 📬 Connect With Me
 
+- 🌐 **Portfolio:** [arjun-snowy.vercel.app](https://arjun-snowy.vercel.app/)
 - 💼 **LinkedIn:** [linkedin.com/in/arjun-prasad-9139a1327](https://www.linkedin.com/in/arjun-prasad-9139a1327/)
 - 🐙 **GitHub:** [@azazil-06](https://github.com/azazil-06)
 - ✉️ **Email:** [arjunprasadsa@gmail.com](mailto:arjunprasadsa@gmail.com)
