@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi there! I'm Arjun Prasad
+# 👋 Hi there! I'm Arjun
 ### Developer & Maker • Robotics • Game Dev • Creative AI Tooling • Full-Stack Systems
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live%20Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://arjun-snowy.vercel.app/)
