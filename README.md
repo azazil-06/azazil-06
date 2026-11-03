@@ -56,6 +56,7 @@ I love working with **constrained systems** — whether that means squeezing rea
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 
@@ -76,6 +77,7 @@ I love working with **constrained systems** — whether that means squeezing rea
 | Project | Description | Stack | Link |
 | :--- | :--- | :--- | :---: |
 | **NextCore** | Edge-First Multi-Agent Clinical Intelligence & Emergency Decision-Support Platform | `React` `Node.js` `LanceDB` `SQLite` | [Repo ↗](https://github.com/azazil-06/NextCare.git) |
+| **ReportSmith** | Autonomous academic report builder powered by local LLMs & deterministic factual synthesis | `Python` `Ollama` `python-docx` `Pydantic` | [Repo ↗](https://github.com/azazil-06/ReportSmith-Project-Report-creating-tool-with-local-LLMs-.git) |
 | **Rocky — Bipedal Robot** | BLE-controlled bipedal walking robot with real-time OLED kinematics display | `ESP32-C3` `I2C OLED` `SG90` `C++` | [Repo ↗](https://github.com/azazil-06/Bipedal-Robot-esp32c3-.git) |
 | **Adventure Game** | Full-fledged action RPG exploring custom mechanics and stylized art pipelines | `Unity` `C#` `Blender` `Krita` | [Repo ↗](https://github.com/azazil-06/Adventure-Game.git) |
 | **Aseprite Local Stable Diffusion** | Local generative AI extension to produce pixel art sprites on low-spec hardware | `Python` `Stable Diffusion` `Aseprite` | [Repo ↗](https://github.com/azazil-06/Aseprite-Local-Stable-Diffusion-for-low-spec-devices-Ongoing-.git) |
