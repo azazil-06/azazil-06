@@ -44,6 +44,7 @@ I love working with **constrained systems** — whether that means squeezing rea
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
+![Verilog](https://img.shields.io/badge/Verilog-000000?style=for-the-badge&logoColor=white)
 
 #### Frontend & UI
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
