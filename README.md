@@ -83,8 +83,8 @@ I love working with **constrained systems** — whether that means squeezing rea
 | :--- | :--- | :--- | :---: |
 | **ReportSmith** | Autonomous academic report builder powered by local LLMs & deterministic factual synthesis | `Python` `Ollama` `python-docx` `Pydantic` | [Repo ↗](https://github.com/azazil-06/ReportSmith-Project-Report-creating-tool-with-local-LLMs-.git) |
 | **RemotePC** | Terminal control center & autonomous AI agent for automating Windows desktops over SSH, built for mobile use | `SSH` `AI Agent` | [Repo ↗](https://github.com/azazil-06/RemotePC) |
-| **NextCare** | Hospital management dashboard with OCR — hackathon project (7th place) | `Python` `OCR` | [Repo ↗](https://github.com/azazil-06/NextCare.git) |
 | **Rocky — Bipedal Robot** | BLE-controlled bipedal walking robot with real-time OLED kinematics display | `ESP32-C3` `I2C OLED` `SG90` `C++` | [Repo ↗](https://github.com/azazil-06/Bipedal-Robot-esp32c3-.git) |
+| **NextCare** | Hospital management dashboard with OCR — hackathon project (7th place) | `Python` `OCR` | [Repo ↗](https://github.com/azazil-06/NextCare.git) |
 | **Adventure Game** | Full-fledged action RPG exploring custom mechanics and stylized art pipelines | `Unity` `C#` `Blender` `Krita` | [Repo ↗](https://github.com/azazil-06/Adventure-Game.git) |
 | **Aseprite Local Stable Diffusion** | Local generative AI extension to produce pixel art sprites on low-spec hardware | `Python` `Stable Diffusion` `Aseprite` | [Repo ↗](https://github.com/azazil-06/Aseprite-Local-Stable-Diffusion-for-low-spec-devices-Ongoing-.git) |
 | **LLM from Scratch** | Building bigram, N-gram and transformer models from the ground up | `Python` `Jupyter` | [Repo ↗](https://github.com/azazil-06/LLM-from-scratch) |
