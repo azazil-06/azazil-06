@@ -35,7 +35,6 @@ I love working with **constrained systems** — whether that means squeezing rea
 <div align="center">
 
 #### Languages
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C%23](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
@@ -43,11 +42,14 @@ I love working with **constrained systems** — whether that means squeezing rea
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
 
 #### Frontend & UI
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
@@ -56,8 +58,10 @@ I love working with **constrained systems** — whether that means squeezing rea
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 
 #### Hardware, Robotics & Creative
@@ -76,12 +80,13 @@ I love working with **constrained systems** — whether that means squeezing rea
 
 | Project | Description | Stack | Link |
 | :--- | :--- | :--- | :---: |
-| **NextCore** | Edge-First Multi-Agent Clinical Intelligence & Emergency Decision-Support Platform | `React` `Node.js` `LanceDB` `SQLite` | [Repo ↗](https://github.com/azazil-06/NextCare.git) |
 | **ReportSmith** | Autonomous academic report builder powered by local LLMs & deterministic factual synthesis | `Python` `Ollama` `python-docx` `Pydantic` | [Repo ↗](https://github.com/azazil-06/ReportSmith-Project-Report-creating-tool-with-local-LLMs-.git) |
+| **RemotePC** | Terminal control center & autonomous AI agent for automating Windows desktops over SSH, built for mobile use | `SSH` `AI Agent` | [Repo ↗](https://github.com/azazil-06/RemotePC) |
+| **NextCare** | Hospital management dashboard with OCR — hackathon project (7th place) | `Python` `OCR` | [Repo ↗](https://github.com/azazil-06/NextCare.git) |
 | **Rocky — Bipedal Robot** | BLE-controlled bipedal walking robot with real-time OLED kinematics display | `ESP32-C3` `I2C OLED` `SG90` `C++` | [Repo ↗](https://github.com/azazil-06/Bipedal-Robot-esp32c3-.git) |
 | **Adventure Game** | Full-fledged action RPG exploring custom mechanics and stylized art pipelines | `Unity` `C#` `Blender` `Krita` | [Repo ↗](https://github.com/azazil-06/Adventure-Game.git) |
 | **Aseprite Local Stable Diffusion** | Local generative AI extension to produce pixel art sprites on low-spec hardware | `Python` `Stable Diffusion` `Aseprite` | [Repo ↗](https://github.com/azazil-06/Aseprite-Local-Stable-Diffusion-for-low-spec-devices-Ongoing-.git) |
-| **GestureLite (Phalanx)** | Contactless gesture-recognition system for bio-kinetic electrical control | `Python` `OpenCV` `MediaPipe` `Arduino` | [Repo ↗](https://github.com/azazil-06/Phalanx-Vectorized-Bio-Kinetic-Optoelectronic-Modulation-System.git) |
+| **LLM from Scratch** | Building bigram, N-gram and transformer models from the ground up | `Python` `Jupyter` | [Repo ↗](https://github.com/azazil-06/LLM-from-scratch) |
 
 ---
 
